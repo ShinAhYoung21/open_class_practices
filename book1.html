@@ -11,47 +11,23 @@
   gtag('config', 'G-5790S3ELGW');
 </script>
   <title>개인화한 code사전</title>
-  <style>
-    h1{
-      font-size: 55px;
-      text-align: center;
-      color: green;
-      border-bottom: 1px solid gray;
-      margin:0;
-      padding:20px;
-    }
-
-    a{
-      text-decoration:none;
-    }
-    #grid{
-      display: grid;
-      grid-template-columns: 150px 1fr;
-    }
-    #grid ol{
-      border-right:1px solid gray;
-      width:100px;
-      margin:0;
-      padding:40px;
-    }
-    #grid #article{
-      padding-left:50px;
-    }
-    .no{
-      border:none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>web1_html</h1>
-  생활코딩 web1강의 수강 중 학습, 활용한 html태그 사전
-  <br><a href=index.html>Home</a>
+  <p>
+    생활코딩 web1강의 수강 중 활용한 태그, 프로그램 활용 팁.
+    <br><blockquote>실습 프로젝트:<a href="https://ego-grim.github.io/perf1/" target="_blank">'퍼포먼스 연구소'</a>
+    <br>콘텐츠 소개 사이트.</blockquote>
+  </p>
+<br><a href=index.html>Home</a>
   <div id="grid">
     <ol>
       <li><a href=book1.html class="no">web1_html</a></li>
+      <li><a href=book2.html class="no">web2_css</a></li>
     </ol>
     <div id="article">
-      <h2>html tags</h2>
+      <h2>html</h2>
         <ul>
           <li><strong>strong</strong> 굵은 글씨체</li>
           <li><strong>u</strong>밑줄.underline.</li>
@@ -67,7 +43,7 @@
           <li><strong>head</strong> 본문을 설명하는 부분을 감싸는 태그. 여닫을 수 있다.</li>
           <li><strong>body</strong> 본문. 소스코드의 주 내용을 작성하는 부분을 감싸는 태그. 여닫을 수 있다.</li>
           <li><strong>a</strong> 링크. anchoor(닻).</li>
-          <li><strong>target=""</strong> a 뒤에 쓰이는 속성(attribute)중 하나. 링크 문서를 새 창으로 열려면 <strong>_blank</strong>, 현재 페이지에 열려면 아무 값 입력 안 하면 된다(또는 _self입력).</li>
+          <li><strong>target=""</strong> a 뒤에 쓰이는 속성(attribute)중 하나. <br>링크 문서를 새 창으로 열려면 <strong>_blank</strong>, <br>현재 페이지에 열려면 아무 값 입력 안 하면 된다(또는 _self입력).</li>
           <li><strong>title=""</strong> 이 역시 a 뒤에 쓰이는 속성 중 하나. 링크에 마우스 커서를 올리면 나타나는 '링크 제목'을 입력하는 태그.</li>
           <li><strong>input type="checkbox"</strong> 체크박스 삽입. <input type="checkbox">(예시로만 봤던 태그라 한 번 써봤음ㅋㅋㅋ).</li>
           <li><strong>blockquote</strong> 들여쓰기 태그.</li>
