@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>영상콘텐츠 리뷰</title>
+    <meta charset="utf-8">
+    <style media="screen">
+      .start {
+        font-weight: bold;
+        background-color: yellowgreen;
+      }
+      span {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 >
+        <a href="index.html">영상 리뷰</a>
+      </h1>
+      <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('.start').style.backgroundColor = 'gray';
+      ">
+      <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('.start').style.backgroundColor = 'coral';
+      ">
+      <br>
+    </header>
+        <h2 style="color:powderblue"><strong>영화</strong> 레베카(2020)</h2>
+        <span class="start">작품 속 '드윈터 부인'을 닮은 리메이크</span> 거장 히치콕 감독의 동명 영화를 넘어서지 못한, 작품 속 '두 번째 드윈터 부인'을 닮은 리메이크작품.<br>
+        그러고 보면,  레베카 소설을 시작으로, 영화 레베카, 뮤지컬 레베카. 게다가 극중에서 가장 유명한 넘버가 레베카이다.<br>
+        거기에 2020년에는 고전영화 리메이크작 레베카도 나왔으니, <u>이야기 속 '나' 또는 두 번째 드 윈터 부인은 절대 그녀를 이기지 못할 듯 하다.</u>
+  </body>
+</html>
