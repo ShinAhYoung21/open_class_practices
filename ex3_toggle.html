@@ -14,21 +14,22 @@
       <h1 >
         <a>노랫말: lyric</a>
       </h1>
-      <input id="night_day" type="button" value="night" onclick="
-      if(document.querySelector('#night_day').value === 'night'){
-        document.querySelector('body').style.backgroundColor = 'black';
+      <input  type="button" value="night" onclick="
+      var target = document.querySelector('body');
+      if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
         document.querySelector('#titleH').style.color = 'darkgray';
         document.querySelector('#titleH').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'white';
+        target.style.color = 'white';
         document.querySelector('.start').style.backgroundColor = 'gray';
-        document.querySelector('#night_day').value ='day';
+        this.value ='day';
       } else {
-        document.querySelector('body').style.backgroundColor = 'white';
+        target.style.backgroundColor = 'white';
         document.querySelector('#titleH').style.color = 'black';
         document.querySelector('#titleH').style.backgroundColor = 'yellow';
-        document.querySelector('body').style.color = 'black';
+        target.style.color = 'black';
         document.querySelector('.start').style.backgroundColor = 'coral';
-        document.querySelector('#night_day').value = 'night';
+        this.value = 'night';
       }
       ">
       <br>
@@ -47,5 +48,6 @@
         후디리리요 후디리리 후디리리요 후디리리
         <br>
         후디리리요 후디리리 후디리리요 후디리리
+
   </body>
 </html>
