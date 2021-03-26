@@ -14,6 +14,7 @@ w3schools jQuery toggle method 정의 중:
 예를 들면, night/day버튼을 하나로 통합해서 만드는 것.
 */
 
+
 /*
 [비교연산자 & 불리언]
 Comparison operators & Boolean
