@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>아름다운 베르네</title>
+    <meta charset="utf-8">
+    <script>
+      fuction nightDayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        document.querySelector('#titleH').style.color = 'darkgray';
+        document.querySelector('#titleH').style.backgroundColor = 'white';
+        target.style.color = 'white';
+        document.querySelector('.start').style.backgroundColor = 'gray';
+        self.value ='day';
+      } else {
+        target.style.backgroundColor = 'white';
+        document.querySelector('#titleH').style.color = 'black';
+        document.querySelector('#titleH').style.backgroundColor = 'yellow';
+        target.style.color = 'black';
+        document.querySelector('.start').style.backgroundColor = 'coral';
+        self.value = 'night';
+      }
+    }
+    </script>
+    <style media="screen">
+      .start {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 >
+        <a>노랫말: lyric</a>
+      </h1>
+      <input  type="button" value="night" onclick="
+      nightDayHandler(this)">
+      <br>
+    </header>
+        <h2 id="titleH"><strong>아름다운 베르네</strong> 가사</h2>
+        <span class="start">한국에서 더 유명한 곡이라고 함ㅋㅋㅋ</span>
+        <br>
+        아름다운 베르네. 맑은 시냇물이 넘처 흐르네.
+        <br>
+        새빨간 알젠로이스 이슬 먹고 피어 있는 곳.
+        <br>
+        다스 오버렌야 오버렌 베르네산골 아름답구나.
+        <br>
+        다스 오버렌야 오버렌 아름다운 베르네.
+        <br>
+        후디리리요 후디리리 후디리리요 후디리리
+        <br>
+        후디리리요 후디리리 후디리리요 후디리리
+
+  </body>
+</html>
