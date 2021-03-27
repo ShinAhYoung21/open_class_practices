@@ -8,6 +8,38 @@
         font-weight: bold;
       }
     </style>
+    <script>
+      function linksSetColor(color){
+        var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+            alist[i].style.color = color;
+            i = i + 1;
+          }
+      }
+      function bodySetColor(color){
+        document.querySelector('body').style.color = color;
+      }
+      function bodySetBackgroundColor(color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+        if(self.value === 'night'){
+          bodySetBackgroundColor('black');
+          bodySetColor('white');
+          self.value ='day';
+
+          linksSetColor('yellow');
+        } else {
+          bodySetBackgroundColor('white');
+          bodySetColor('black');
+          self.value = 'night';
+
+          linksSetColor('blue');
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -15,26 +47,11 @@
         <a>노랫말: lyric</a>
       </h1>
       <input  type="button" value="night" onclick="
-      var target = document.querySelector('body');
-      if(this.value === 'night'){
-        target.style.backgroundColor = 'black';
-        document.querySelector('#titleH').style.color = 'darkgray';
-        document.querySelector('#titleH').style.backgroundColor = 'white';
-        target.style.color = 'white';
-        document.querySelector('.start').style.backgroundColor = 'gray';
-        this.value ='day';
-      } else {
-        target.style.backgroundColor = 'white';
-        document.querySelector('#titleH').style.color = 'black';
-        document.querySelector('#titleH').style.backgroundColor = 'yellow';
-        target.style.color = 'black';
-        document.querySelector('.start').style.backgroundColor = 'coral';
-        this.value = 'night';
-      }
+        nightDayHandler(this);
       ">
       <br>
     </header>
-        <h2 id="titleH"><strong>아름다운 베르네</strong> 가사</h2>
+        <a href="https://blog.kakaocdn.net/dn/bEq8gg/btqKOBvBgUo/NaakntQ3qPgLC9bocZokhK/img.jpg"><h2 id="titleH"><strong>아름다운 베르네</strong> 가사</h2></a>
         <span class="start">한국에서 더 유명한 곡이라고 함ㅋㅋㅋ</span>
         <br>
         아름다운 베르네. 맑은 시냇물이 넘처 흐르네.

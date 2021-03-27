@@ -18,7 +18,26 @@
                 two();
             </script>
         </ul>
-        <h2>parameter</h2>
+        <h2>parameter & argument</h2>
+            <script>
+                function onePlusOne(){
+                    document.write(1+1+'<br>');
+                }
+                onePlusOne();
+                function sumColorRed(left, right){
+                    document.write('<div style="color:red">'+left+right+</div>'<br>');
+                } //함수 선언 중, sum 옆 ()속에 써있는 값이 매개변수.parameter이다.
+                sum(2,3); //함수 실행 시 ()속에 있는 값은 인자. argument
+                sumColorRed(4,6);
+            </script>
         <h2>return</h2>
+            <script>
+                function sum2(left, right){
+                    return left+right;
+                }
+                document.write(sum2(2,3)+'<br>'); //5
+                document.write('<div style="color:red">' + sum2(2,3)+ '</div>');
+                document.write('<div style="font-size:3rem;">' + sum2(2,3)+'</div>')
+            </script>
     </body>
 </html>
