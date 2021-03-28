@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>object</h1>
+        <h2>how to create?</h2>
+        <!-- 객체를 만들고, 그 객체 안에 데이터를 저장, 저장된 데이터를 가져오는 방법 실습! -->
+        <script>
+            const gamesIKnow = {
+               "gameName" : "lol",
+               "anotherGameName" : "DBH"
+            };
+           
+            document.write("gameName : "+gamesIKnow.gameName +"<br>");
+            document.write("anotherGameName : "+gamesIKnow.anotherGameName +"<br>");
+            gamesIKnow.newbie = "GTA";
+            document.write("newbie : "+gamesIKnow.newbie +"<br>")
+            gamesIKnow["data scientist"] = "you";
+            document.write("data scientist : "+gamesIKnow["data scientist"]+"<br>")
+        </script>
+        <!-- gamesIKnow 객체에 lol은 gameName이라는 딱지 붙여 저장한 것. -->
+        <!--굳이 이름에 띄어쓰기 넣어야겠다면, 배열을 쓰는 것처럼 []활용. 단, []안에 ""를 쓰고 그 안에 이름쓰기-->
+    </body>
+</html>
